@@ -122,6 +122,7 @@ categorical_features_indices = np.where(X.dtypes != np.float)[0]
 
 #importing library and building model
 from catboost import CatBoostRegressor
+
 model=CatBoostClassifier(iterations=1450,
                            learning_rate=0.01,
                            depth=10,
